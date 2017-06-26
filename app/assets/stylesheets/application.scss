@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+
+*{
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin:0;
+}
+
+*:focus {
+outline: 0;
+outline: none;
+}
+
+#navbar{
+  background-color: #f9f8f8;
+}
+
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  margin-left: -80px;
+}
+
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+.nav li a:hover{
+  text-decoration: none;
+  background-color: #f9f8f8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+.nav-logo{
+  height:50px;
+  width: auto;
+}
+
+.logo-button{
+  height:50px;
+  width:180px;
+  background: image-url('logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-button:hover{
+  height:50px;
+  width:180px;
+  background: image-url('red-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-button{
+  padding: 0 !important;
+}

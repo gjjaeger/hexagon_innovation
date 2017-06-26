@@ -1,0 +1,501 @@
+@import "bootstrap";
+
+.fullscreen {
+  display: block; //very importnat reason for the initial white space
+  overflow: hidden; //very important reason for the white space
+  position:relative;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:100vh;
+  width:100%;
+  z-index: 2;
+}
+
+.main-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-text-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.main-text{
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+
+.titleunderlign{
+  border-bottom: 1px solid #5DBCD2;
+  margin-bottom: 2%;
+}
+
+#findoutmore{
+  margin-top: 40px;
+}
+
+.simple-button, .simple-button-black{
+  border-radius: 0 !important;
+  background-color: Transparent !important;
+  background-repeat:no-repeat !important;
+  width: 275px !important;
+}
+
+.simple-button{
+  border: 2px solid white !important;
+}
+
+.simple-button-black{
+  border: 1px solid black !important;
+}
+
+.simple-button:hover, .simple-button-black:hover{
+  background-color: white !important;
+  border-radius: 0;
+  .button-text {
+    color:black;
+  }
+}
+
+.simple-button:hover{
+  border: 2px solid white;
+}
+
+.simple-button-black:hover{
+  border: 1px solid #efefef !important;
+}
+
+.button-text-black, .button-text{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color:white;
+}
+
+.button-text-black{
+  color:black !important;
+}
+
+.product-quality{
+  display: block;
+  position: relative;
+  float: clear;
+  padding: 50px 0px;
+}
+
+.company-promise-container {
+  text-align: center;
+}
+.company-promise{
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.inner-competency {
+  text-align: center;
+}
+
+.icon{
+  font-size: 80px;
+}
+
+.competency-title{
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.competency-description{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.competency-description-container, .competency-title-container{
+  padding-top: 15px;
+}
+
+#backimgtriangletopleft{
+  background-image: url("whitetriangle topleft.png");
+  top:0;
+  background-size: cover;
+  width: 100%;
+}
+
+#backimgtriangletopright{
+  background-image: url("whitetriangle topright.png");
+  top:0;
+  background-size: cover;
+  width: 100%;
+}
+
+#changeimage{
+  background: url("change-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+}
+
+#changeimage2{
+  background: url("change-image2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+}
+
+.changeimage{
+  margin-top: 100px;
+  width:100%;
+  background-size: cover;
+  padding:0px !important;
+  z-index: 3;
+}
+
+.backimg1a{
+  position: relative;
+  top: 0px !important;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 12;
+}
+
+.backimg1t{
+  position: relative;
+  bottom: 0px !important;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#backimgtrianglebottomright{
+  background-image: url("whitetriangle bottomright.png");
+  width: 100%;
+  bottom:0;
+  z-index:10;
+}
+
+#howitworks{
+  text-align: center;
+}
+
+.howitworks-title{
+  font-size: 32px;
+
+}
+
+.howitworks-title-container{
+  margin-top: 50px;
+}
+
+.howimage{
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 400px;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 400px;
+}
+
+.footer-distributed .footer-center .general-icon{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 350px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
