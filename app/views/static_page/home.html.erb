@@ -73,6 +73,26 @@
   </div>
   <%= image_tag("howitworks.png", :class => "howimage") %>
 </div>
+<div class="subscribe-form">
+  <div class="subscribe-title-wrapper">
+    <span class="subscribe-title">Subscribe to our updates</span>
+  </div>
+  <div class="subscribe-description-wrapper">
+    <span class="subscribe-description">Sign up with your email address to receive latest news, updates and promotions.</span>
+  </div>
+  <%= form_for @subscription, :html => {:id => 'address-form'} do |f| %>
+    <div class='form-input-wrapper'>
+      <%= f.text_field :firstname, class: "form-control subscription-input", id: "name", placeholder: "First Name", :required => true%>
+      <%= f.text_field :lastname, class: "form-control subscription-input", id: "name", placeholder: "Last Name", :required => true %>
+      <%= f.text_field :email, class: "form-control subscription-input", id: "name", placeholder: "E-Mail Address", :required => true %>
+    </div>
+    <%= button_tag(type: 'submit', class:"btn btn-lg simple-button-black", id:"subscribe-button") do%>
+      <span class="button-text-black">
+        Sign Up
+      </span>
+    <%end%>
+  <%end%>
+</div>
 <section class="container-fluid changeimage" id="changeimage2">
   <div class="backimg1a" id="backimgtriangletopright">
   </div>

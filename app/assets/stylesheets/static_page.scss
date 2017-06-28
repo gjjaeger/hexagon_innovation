@@ -71,7 +71,12 @@
   border: 2px solid white;
 }
 
-.simple-button-black:hover{
+#subscribe-button{
+  background-color: #e3f0d4!important;
+  border-color:rgb(204, 204, 204)!important;
+}
+
+.simple-button-black:hover, #subscribe-button:hover{
   border: 1px solid #efefef !important;
 }
 
@@ -99,9 +104,9 @@
 }
 .company-promise{
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
-  font-style: italic;
+  font-family: 'PT Sans',sans-serif !important;
 }
 
 .inner-competency {
@@ -199,7 +204,7 @@
 
 .howitworks-title{
   font-size: 32px;
-
+  font-family: 'PT Sans',sans-serif !important;
 }
 
 .howitworks-title-container{
@@ -210,6 +215,40 @@
   margin-left: auto;
   margin-right: auto;
   width:60%;
+}
+
+.subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe-title-wrapper{
+  margin-bottom: 17px;
+}
+
+.subscribe-description{
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.subscribe-description-wrapper{
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.subscription-input{
+  width: 250px !important;
+  border-radius: 0!important;
+  display: inline-block !important;
+  height:45px !important;
+}
+
+.subscribe-form{
+  text-align: center;
+}
+
+.form-input-wrapper{
+  display: inline-block;
 }
 
 .footer-distributed{
